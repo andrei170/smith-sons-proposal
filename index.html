@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Smith &amp; Sons Roofing - Proposal</title>
+<meta name="description" content="Proposal prepared for Smith and Sons Roofing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0f11; --panel:#161a1e; --panel2:#1e2328; --ink:#f2f4f5; --mut:#98a0a8;
+  --line:#2b3238; --amber:#e8a33d; --amber-dk:#b87a1c; --good:#3fb950; --warn:#d29922;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--amber);font-weight:700}
+h1{font-size:clamp(30px,4.6vw,42px);font-weight:800;letter-spacing:-.015em;margin:10px 0 8px}
+h2{font-size:clamp(24px,3.4vw,32px);font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+h3{font-size:20px;font-weight:700}
+p{color:var(--mut)}
+b,strong{color:var(--ink)}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{padding:48px 0 34px;border-bottom:1px solid var(--line);
+  background:radial-gradient(1100px 380px at 72% -20%,rgba(232,163,61,.15),transparent)}
+header .sub{color:var(--mut);font-size:16px;max-width:680px}
+
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+.h{font-size:12.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.15em;font-weight:700;margin-bottom:18px}
+
+.today{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:10px;padding:22px 24px}
+.today p{font-size:16px}
+.today p+p{margin-top:11px}
+.today.green{border-left-color:var(--good)}
+
+.fixgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+@media(max-width:820px){.fixgrid{grid-template-columns:1fr}}
+.fixcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;border-top:3px solid var(--warn)}
+.fixcard .fnum{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700;margin-bottom:7px}
+.fixcard h4{font-size:16px;margin-bottom:6px}
+.fixcard p{font-size:13.5px}
+
+.pk{display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:start}
+@media(max-width:840px){.pk{grid-template-columns:1fr}}
+.pack{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px 26px;position:relative}
+.pack.rec{border-color:var(--amber);background:linear-gradient(170deg,#2a2011,var(--panel))}
+.rectag{position:absolute;top:-12px;left:26px;background:var(--amber);color:#1a1204;font-size:11.5px;
+  font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:99px}
+.pack .pname{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--mut);font-weight:700}
+.pack .price{font-size:44px;font-weight:800;margin:8px 0 2px;letter-spacing:-.02em}
+.pack .price span{font-size:16px;color:var(--mut);font-weight:600}
+.pack .pnote{font-size:13.5px;color:var(--mut);margin-bottom:20px}
+.pack ul{list-style:none}
+.pack li{display:flex;gap:11px;padding:9px 0;font-size:15.2px;border-top:1px solid var(--line);align-items:flex-start}
+.pack li:first-child{border-top:0}
+.tick{color:var(--good);font-weight:800;flex-shrink:0;margin-top:1px}
+.pack li span.t{color:var(--ink)}
+.pack li small{display:block;color:var(--mut);font-size:13.4px;margin-top:2px;line-height:1.45}
+
+.incl{background:linear-gradient(160deg,#12240f,var(--panel));border:1px solid #2b7a41;border-radius:12px;
+  padding:20px 22px;margin-top:18px}
+.incl b{color:#7ede9a}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+.box h3{margin-bottom:12px;font-size:17px}
+.box ul{list-style:none}
+.box li{padding:7px 0;font-size:15px;color:var(--mut);display:flex;gap:10px;align-items:flex-start}
+.box li:before{content:"";width:5px;height:5px;border-radius:99px;background:var(--amber);flex-shrink:0;margin-top:9px}
+.box.no li:before{background:#6b6b6b}
+
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:840px){.tl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tl{grid-template-columns:1fr}}
+.tl div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.tl .wk{font-size:11.5px;text-transform:uppercase;letter-spacing:.13em;color:var(--amber);font-weight:700;margin-bottom:7px}
+.tl h4{font-size:16px;font-weight:700;margin-bottom:5px}
+.tl p{font-size:14px}
+
+.plain{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:22px 24px;font-size:15.4px}
+.plain p+p{margin-top:11px}
+
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Prepared for Sam Smith</div>
+    <h1>Smith &amp; Sons Roofing - Proposal</h1>
+    <div class="sub">Six roofers with room for more work. Here's what I'd fix first, what ads would cost, and what I'd need from you to size it properly.</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="h">On the website question</div>
+    <div class="today green">
+      <p>You said you'd go either way on the website. <b>My honest answer is don't replace it.</b></p>
+      <p>It looks good, it loads fast, the enquiry form works, and you've already got nine town pages built which most of your competitors haven't bothered with. Replacing that would cost you money for very little gain.</p>
+      <p>What it needs is fixing, not rebuilding. And the main fix takes about an hour.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Three things to fix before any ad spend</div>
+    <div class="fixgrid">
+      <div class="fixcard">
+        <div class="fnum">Fix 1 &middot; Biggest</div>
+        <h4>No title or description tags</h4>
+        <p>The site has no page title and no meta description anywhere. That's the line Google shows in search results, so right now there's nothing for it to display. It also pushes up what you'd pay per click on ads, because Google scores landing page quality.</p>
+      </div>
+      <div class="fixcard">
+        <div class="fnum">Fix 2</div>
+        <h4>The numbers don't match</h4>
+        <p>The site says 15+ team members, 10,000+ projects and 9,000+ clients. You told me you've got 6. These almost certainly came with the template, but they need correcting before paid traffic lands on them.</p>
+      </div>
+      <div class="fixcard">
+        <div class="fnum">Fix 3 &middot; Quickest</div>
+        <h4>"Send Massage"</h4>
+        <p>The button on your contact form says Send Massage instead of Send Message. It's on the exact button someone presses to become a customer. Thirty second fix.</p>
+      </div>
+    </div>
+    <div class="incl">
+      <p><b>All three are included in month one at no extra cost.</b> No setup fee, no build charge. If you stopped after month one, those fixes stay on your site and stay yours.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The two options</div>
+    <div class="pk">
+
+      <div class="pack">
+        <div class="pname">Option 1</div>
+        <div class="price">£1,500<span>/mo</span></div>
+        <div class="pnote">£750 ad spend, £750 management. No lock-in, cancel any time.</div>
+        <ul>
+          <li><span class="tick">&#10003;</span><span class="t">All three fixes above, included month one<small>Title tags, corrected figures, form button, plus schema and conversion tracking.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Local ads across Leicester and Loughborough<small>Starting with the two biggest towns rather than spreading thin.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Pointed at your existing town pages<small>You've already built them. No reason to send paid traffic to the homepage.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Monthly reporting on enquiries and cost per job<small>Not impressions. Not clicks. Jobs.</small></span></li>
+        </ul>
+      </div>
+
+      <div class="pack rec">
+        <div class="rectag">Recommended</div>
+        <div class="pname">Option 2</div>
+        <div class="price">£2,500<span>/mo</span></div>
+        <div class="pnote">£1,250 ad spend, £1,250 management. No lock-in, cancel any time.</div>
+        <ul>
+          <li><span class="tick">&#10003;</span><span class="t">Everything in Option 1, at nearly double the reach</span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Domestic and commercial run as separate campaigns<small>A homeowner with a slipped tile and a site manager needing an industrial roof are not the same customer. One campaign for both wastes money on each.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Emergency leak campaign running alongside<small>Highest intent search there is, and you already offer 24/7 call-out. Nobody shops around at 9pm with water coming through.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">All nine towns covered<small>Hinckley, Coalville, Birstall, Rothley, Syston, Thurmaston and Glenfield as well.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">This is the one I'd pick<small>With six lads and capacity to spare, the constraint is enquiry volume. Option 1 gets there slower.</small></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="h">How it runs</div>
+    <div class="tl">
+      <div><div class="wk">Week 1</div><h4>Fix The Site</h4><p>Title tags, figures corrected, form button, schema and conversion tracking installed.</p></div>
+      <div><div class="wk">Week 2</div><h4>Build Campaigns</h4><p>Ads built around real work photos and the family-run angle, pointed at your town pages.</p></div>
+      <div><div class="wk">Week 3</div><h4>Live &amp; Tuning</h4><p>Campaigns go live, first enquiries reviewed, targeting tightened.</p></div>
+      <div><div class="wk">Ongoing</div><h4>Report &amp; Scale</h4><p>Monthly reporting, more budget into whatever's producing booked jobs.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What you own, and what you don't pay me for</div>
+    <div class="two">
+      <div class="box">
+        <h3>Yours, always</h3>
+        <ul>
+          <li>Every enquiry and every customer generated</li>
+          <li>The ad account, in your name, you keep it if we part</li>
+          <li>All tracking data and reporting history</li>
+          <li>Every fix made to your website, they stay done</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <h3>Not charged, and not needed</h3>
+        <ul>
+          <li>A new website, yours is good and needs fixing not replacing</li>
+          <li>SEO retainer, that's a 6-12 month play and you want work sooner</li>
+          <li>Social media management, roofs aren't bought off Instagram</li>
+          <li>Setup or onboarding fee, there isn't one</li>
+          <li>Any markup on your ad spend, ever</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Being straight with you</div>
+    <div class="plain">
+      <p><b>There's no guarantee, and I'm not going to pretend otherwise.</b> I can't promise you a number of jobs a week, and anyone who does before running a single ad is guessing. What I can promise is that you'll see exactly what's happening from week one, and that I'll tell you if it isn't working rather than waiting for you to ask.</p>
+      <p><b>The one number I need from you:</b> how many jobs you're running a week now, and what six lads could comfortably handle. Everything else I've worked out from your site, but that one has to come from you, and it's what turns this from a general chat into a specific plan.</p>
+      <p><b>Also useful:</b> your rough average job value, split between repairs and full re-roofs. That tells us what an enquiry is genuinely worth to you, which decides how hard we can afford to bid.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>Prepared by Andrei Givero &middot; AG1 Consulting &nbsp;|&nbsp; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a><br>
+<span style="opacity:.7">Prices held for 30 days. Monthly, no lock-in, cancel any time.</span></footer>
+</body>
+</html>
