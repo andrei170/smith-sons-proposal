@@ -47,6 +47,18 @@ section{padding:44px 0;border-bottom:1px solid var(--line)}
 .fixcard h4{font-size:16px;margin-bottom:6px}
 .fixcard p{font-size:13.5px}
 
+.ownrow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:stretch}
+@media(max-width:820px){.ownrow{grid-template-columns:1fr}}
+.owncard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.owncard.total{border-color:var(--amber);background:linear-gradient(170deg,#2a2410,var(--panel))}
+.owncard .ownlab{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);font-weight:800}
+.owncard .ownprice{font-size:38px;font-weight:800;letter-spacing:-.02em;margin:8px 0 0}
+.owncard.total .ownprice{color:var(--amber)}
+.owncard .ownsub{font-size:12px;color:var(--mut);margin-bottom:10px}
+.owncard p{font-size:13.4px;color:var(--mut);line-height:1.5}
+.ownplus{display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:var(--mut)}
+@media(max-width:820px){.ownplus{padding:2px 0}}
+
 .pk{display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:start}
 @media(max-width:840px){.pk{grid-template-columns:1fr}}
 .pack{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px 26px;position:relative}
@@ -141,7 +153,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
       </div>
     </div>
     <div class="incl">
-      <p><b>The full rebuild, on your own account, is included in month one at no extra cost.</b> No setup fee, no build charge. If you stopped after month one, the website is yours, on your account, and it stays live. You'd be in a far better spot than you are now, which is locked out of a site that could vanish.</p>
+      <p><b>The rebuild is a one-off £500, and the site is then yours outright</b>, on your own account, findable on Google once the £300 technical SEO is added. Or, if you take the recommended monthly package, the whole lot comes free. Either way you own it, and either way you're off that dead account. The full breakdown is below.</p>
     </div>
   </section>
 
@@ -155,15 +167,44 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
   </section>
 
   <section>
+    <div class="h">Step one, and you can start here on its own</div>
+    <div class="ownrow">
+      <div class="owncard">
+        <div class="ownlab">Your website, yours to keep</div>
+        <div class="ownprice">£500</div>
+        <div class="ownsub">One-off</div>
+        <p>Rebuilt and live on an account in your name. Not rented, not on my login, not on anyone's account you can be locked out of. Yours the day it goes live, forever.</p>
+      </div>
+      <div class="ownplus">+</div>
+      <div class="owncard">
+        <div class="ownlab">Technical SEO setup</div>
+        <div class="ownprice">£300</div>
+        <div class="ownsub">One-off</div>
+        <p>The title tags, descriptions and structure Google needs to actually find you. The exact thing your current site is missing, done properly from the start.</p>
+      </div>
+      <div class="ownplus">=</div>
+      <div class="owncard total">
+        <div class="ownlab">Get you off their account</div>
+        <div class="ownprice">£800</div>
+        <div class="ownsub">One-off, total</div>
+        <p>A website you own outright and Google can find, live within days. If you did nothing else, you'd have solved the lockout and be in a far better spot than today.</p>
+      </div>
+    </div>
+    <div class="incl" style="margin-top:16px">
+      <p><b>Take the recommended monthly package and this whole £800 is free.</b> The website and the SEO come included, because the monthly covers my time either way. So the choice below is really: pay £800 once to own your site, or go with Option 2 and get it thrown in.</p>
+    </div>
+  </section>
+
+  <section>
     <div class="h">The two options</div>
     <div class="pk">
 
       <div class="pack">
         <div class="pname">Option 1</div>
         <div class="price">£1,500<span>/mo</span></div>
-        <div class="pnote">£750 ad spend, £750 management. No lock-in, cancel any time.</div>
+        <div class="pnote">£750 ad spend, £750 management. Plus the £800 one-off above. No lock-in, cancel any time.</div>
         <ul>
-          <li><span class="tick">&#10003;</span><span class="t">Full website rebuild on your own account<small>In your name, better than the one you're locked out of. Included, not extra.</small></span></li>
+          <li><span class="tick">&#10003;</span><span class="t">Website you own, plus technical SEO<small>The £800 one-off. Yours outright, off the dead account, findable on Google.</small></span></li>
           <li><span class="tick">&#10003;</span><span class="t">Local ads across Leicester and Loughborough<small>Starting with the two biggest towns rather than spreading thin.</small></span></li>
           <li><span class="tick">&#10003;</span><span class="t">Small jobs and re-roofs both targeted<small>The quick work to fill gaps, the big work for the tickets, aimed properly once I've seen your photos.</small></span></li>
           <li><span class="tick">&#10003;</span><span class="t">Monthly reporting on enquiries and cost per job<small>Not impressions. Not clicks. Jobs.</small></span></li>
@@ -176,6 +217,7 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
         <div class="price">£2,500<span>/mo</span></div>
         <div class="pnote">£1,250 ad spend, £1,250 management. No lock-in, cancel any time.</div>
         <ul>
+          <li><span class="tick">&#10003;</span><span class="t">The £800 website and SEO, free<small>Included, not charged. You still own it outright, you just don't pay the one-off.</small></span></li>
           <li><span class="tick">&#10003;</span><span class="t">Everything in Option 1, at nearly double the reach</span></li>
           <li><span class="tick">&#10003;</span><span class="t">Domestic and commercial run as separate campaigns<small>A homeowner with a slipped tile and a site manager needing an industrial roof are not the same customer. One campaign for both wastes money on each.</small></span></li>
           <li><span class="tick">&#10003;</span><span class="t">Emergency leak campaign running alongside<small>Highest intent search there is, and you already offer 24/7 call-out. Nobody shops around at 9pm with water coming through.</small></span></li>
