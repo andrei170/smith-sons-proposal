@@ -47,6 +47,32 @@ section{padding:44px 0;border-bottom:1px solid var(--line)}
 .fixcard h4{font-size:16px;margin-bottom:6px}
 .fixcard p{font-size:13.5px}
 
+.scaff{background:linear-gradient(160deg,#12241a,var(--panel));border:1px solid #2b7a41;border-radius:12px;
+  padding:20px 22px;display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+.scaff iconify-icon{color:var(--good);font-size:30px;flex-shrink:0;margin-top:2px}
+.scaff h4{font-size:17px;margin-bottom:6px;color:var(--ink)}
+.scaff p{font-size:14px;color:var(--mut)}
+.scaff b{color:#7ede9a}
+.camps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:860px){.camps{grid-template-columns:1fr}}
+.camp{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;border-top:3px solid var(--mut)}
+.camp.emer{border-top-color:var(--bad)}
+.camp.small{border-top-color:var(--amber)}
+.camp.big{border-top-color:#5b9bd5}
+.camp .ctag{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;color:var(--mut);margin-bottom:10px}
+.camp.emer .ctag{color:#e0554f}
+.camp.small .ctag{color:var(--amber)}
+.camp.big .ctag{color:#5b9bd5}
+.camp .chead{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.camp .chead iconify-icon{font-size:22px;color:var(--ink)}
+.camp .chead h4{font-size:17px}
+.camp>p{font-size:13.5px;color:var(--mut);margin-bottom:12px}
+.camp ul{list-style:none;margin:0}
+.camp li{font-size:13px;color:var(--ink);padding:5px 0 5px 18px;position:relative}
+.camp li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.camp.emer li:before{background:var(--bad)}
+.camp.big li:before{background:#5b9bd5}
+
 .ownrow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:stretch}
 @media(max-width:820px){.ownrow{grid-template-columns:1fr}}
 .owncard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
@@ -163,6 +189,56 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 0 44px}
       <p>You mentioned you also want more of the smaller jobs, and you're sending a few photos so I can see exactly what you mean. That matters for how the ads are built, because a small job and a full re-roof are two completely different customers.</p>
       <p><b>The smaller work is what fills the quiet gaps.</b> Leaks, slipped tiles, a bit of guttering, a chimney repoint, they come in fast, they decide fast, and they keep the lads busy between the big jobs. The re-roofs and commercial work are the bigger tickets that are worth chasing harder but land less often. A good ads setup runs both, weighted so the quick jobs keep the diary full while the big ones are worth the wait.</p>
       <p>Once I've seen your photos I'll know which small jobs you actually want more of, and which you'd rather leave, so the ads bring in the right ones rather than just more of everything.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">How the ads actually work</div>
+    <p style="margin-bottom:16px;color:var(--mut);font-size:14.5px">A leak, a slipped tile and a full re-roof are three completely different customers. One "roofing Leicester" campaign for all of them wastes money on each, so it's built as three, each pointed at its own page on your new site.</p>
+
+    <div class="scaff">
+      <iconify-icon icon="ph:seal-check-fill"></iconify-icon>
+      <div>
+        <h4>Your edge on every one of them: no scaffolding</h4>
+        <p>That's around <b>£600 the customer doesn't pay</b>, and no waiting days for a scaffold to go up before you can start. On a small repair, that £600 can be more than the job itself, which makes you almost impossible to say no to. This runs through all three campaigns as the reason to pick you.</p>
+      </div>
+    </div>
+
+    <div class="camps">
+      <div class="camp emer">
+        <div class="ctag">Run first</div>
+        <div class="chead"><iconify-icon icon="ph:lightning-fill"></iconify-icon><h4>Emergency &amp; Leaks</h4></div>
+        <p>The highest intent there is. Someone with water coming through isn't shopping on price, they ring whoever answers. We bid harder when bad weather's forecast, because that's when leak searches spike.</p>
+        <ul>
+          <li>Your 24/7 call-out is the whole hook</li>
+          <li>No scaffold means you start today, not next week</li>
+          <li>The missed-call auto-text catches it while you're on a roof</li>
+        </ul>
+      </div>
+      <div class="camp small">
+        <div class="ctag">Fills the diary</div>
+        <div class="chead"><iconify-icon icon="ph:wrench-fill"></iconify-icon><h4>Small Jobs</h4></div>
+        <p>Repairs, slipped tiles, guttering, chimney repointing. They decide fast and keep the lads busy between the big jobs, which is exactly the work you said you want more of.</p>
+        <ul>
+          <li>The £600 no-scaffold saving hits hardest here</li>
+          <li>Converts fastest, so you see it working in week one</li>
+          <li>Tuned to your photos, the small jobs you want, not the ones you don't</li>
+        </ul>
+      </div>
+      <div class="camp big">
+        <div class="ctag">The big tickets</div>
+        <div class="chead"><iconify-icon icon="ph:house-line-fill"></iconify-icon><h4>Re-roofs &amp; Commercial</h4></div>
+        <p>Full replacements, commercial and industrial. They land less often but are worth ten to thirty times a repair, so they earn a patient, separate budget.</p>
+        <ul>
+          <li>Longer decision, so proof and follow-up do the convincing</li>
+          <li>Kept separate so re-roof budget isn't spent on 90p leak clicks</li>
+          <li>Your reviews and track record carry these</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="incl" style="margin-top:16px;background:linear-gradient(160deg,#1a1e14,var(--panel));border-color:#3a3320">
+      <p><b>Month one leans on emergency and small jobs.</b> They convert fastest and get money in the door while everything's still proving out. From month two, more budget shifts into re-roofs and commercial where the bigger profit is. And the mix flexes with the seasons, heavier on leaks through winter storms, heavier on re-roofs through summer.</p>
     </div>
   </section>
 
